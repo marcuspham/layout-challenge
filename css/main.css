@@ -1,0 +1,147 @@
+/* 
+ * Marcus Pham
+ * 
+ * The stylesheet for Dawg Pizza webpage
+ * Updated July 2, 2015
+ */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+
+.container-fluid {
+	margin-top: 0;
+	margin-bottom: 0;
+	background-image: url(../img/ricepaper_v3.png);
+	opacity: 0.9;
+	padding: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+nav a {
+	color: #55e;
+}
+
+nav a:hover, nav a:focus {
+	color: #00E;
+}
+
+body {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+a {
+	color: #0000AA;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #0000EE;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+h1 {
+	font-size: 300%;
+}
+
+h2, h3 {
+	color: #505050;
+}
+
+h2 {
+	font-size: 150%;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 125%;
+}
+
+header {
+	padding: 1em;
+	background-color: #FA5A0F;
+	border-bottom: 5px #EA4A00 solid;
+	color: #FFFFFF;
+}
+
+header p {
+	display: none;
+}
+
+#location {
+	padding: 1em;
+}
+
+#menu {
+	margin: 0;
+	padding: 1em;
+	background-color: rgba(207, 205, 140, 0.5);
+}
+
+#menu dt {
+	font-weight: 400;
+}
+
+#menu dd {
+	font-size: 80%;
+	font-style: italic;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+#about {
+	padding: 1em;
+}
+
+footer {
+	padding: 1em;
+	background-color: #FC892F;
+	border-top: 5px #EC791F solid;
+	font-size: 80%;
+	text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+	body {
+		font-size: 18px;
+		background-image: url(../img/background.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	header {
+		position: relative;
+	}
+
+	header p {
+		display: initial;
+		font-size: 120%;
+		color: #EEEEEE;
+		margin: 0;
+	}
+
+	.container-fluid {
+		margin: 20px 20px 20px 30%;
+	}
+
+	nav {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+}
